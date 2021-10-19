@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
     ubuntu:
-        image: nginx.ssl2
+        image: leehom/nginx.ssl2
         ports:
             - "0.0.0.0:80:80"
             - "0.0.0.0:443:443"
