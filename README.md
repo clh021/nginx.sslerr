@@ -29,3 +29,6 @@ If this HTTPS server uses a certificate signed by a CA represented in
 If you'd like to turn off curl's verification of the certificate, use
  the -k (or --insecure) option.
 ```
+
+关键在于 编译出一个 `OpenSSL 1.0.2g  1 Mar 2016` 并在 nginx 配置中 强制指定 `3DES` 算法。
+> 用户并未强制指定该算法，使用的默认值。而这里使用默认值并不能的到 3DES 的响应。目前推测是 nginx 与 client 之间还有一层网络设备。
