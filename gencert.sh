@@ -7,7 +7,7 @@ openssl req \
     -config cert.config.conf \
     -subj "/C=CN/ST=SC/L=CD/O=XY/OU=FF/CN=gateway.netiler.com" \
     -new -x509 -sha256 \
-    -newkey rsa:2048 \
+    -newkey rsa:4096 \
     -nodes \
     -keyout certs/cert.key \
     -days 3650 \
